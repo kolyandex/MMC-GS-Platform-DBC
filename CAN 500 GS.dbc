@@ -104,7 +104,7 @@ BO_ 613 x265: 8 TRANSMISSION
  SG_ IdleSpdIncreaseReq : 7|1@0+ (1,0) [0|1] "ON/OFF" Vector__XXX
 
 BO_ 776 x308: 8 ENGINE
- SG_ MinimumTorqueReachedByIgnit_0001 : 44|13@0+ (0.125,0) [0|1023.875] "Nm" Vector__XXX
+ SG_ MinimumTorqueReachedByIgnit_0000 : 44|13@0+ (0.125,0) [0|1023.875] "Nm" Vector__XXX
  SG_ EngineRevs : 15|16@0+ (1,0) [0|65535] "RPM" Vector__XXX
 
 BO_ 777 x309: 7 ENGINE
@@ -147,125 +147,6 @@ BO_ 1544 x608: 8 ENGINE
  SG_ IntakeTemp : 15|8@0+ (1,0) [0|1] "" Vector__XXX
  SG_ CoolantTemp : 7|8@0+ (1,-40) [-40|215] "C" Vector__XXX
 
-BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
- SG_ _________100_ : 47|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ MPH : 20|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ ___0x40__ : 15|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ _______________0x40_____________ : 7|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Periodic_maintenance_schedule : 62|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Reverse_gear_alarm : 51|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Seat_belt_reminder_AABT : 47|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Trip_autoreset : 43|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Charging_time : 41|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Shift_disp_layout_RHD : 40|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Sig_7_dist_to_empty_AVG_cons : 39|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Frost_warn_threshold : 36|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Coolant_gauge_0_norm_1_HOT : 33|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Fuel_cons_scale : 31|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ B_Russian : 27|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Average_speed : 15|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Left_side_view_camera : 14|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Nose_view_camera : 13|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Rear_camera : 12|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Farenheit : 11|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Compressor_type_1_6 : 10|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Language_mode_ENABLE : 7|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ S_AWC_Display : 6|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Display_opening_type : 5|3@0+ (1,0) [0|7] "" Vector__XXX
- SG_ Flag : 0|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Beeeeep : 38|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Beeeeep_2 : 37|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Lane_departure : 36|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Sig_2_LDW_icon_3_green_car__0002 : 35|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Sig_44 : 44|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Sig_43 : 43|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Beep_beep : 34|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Beeeeeeep : 33|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Beep : 32|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Sig_27 : 27|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ ________ACC____________________ : 20|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ ________ACC__________________ : 19|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ _________________ : 18|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ _________ : 17|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ MPH : 16|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Speed_since_20_FF_off : 15|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Cruise_small_icon_left : 5|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Sig_4 : 4|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Sig_3 : 3|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ _______________ : 1|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ ______________ : 0|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Sig_1_____2___3__4_uncalibr_0003 : 18|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Beep_beep_beep_beep : 1|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Beeep_beeep_beeep_beeep : 0|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ ____ : 62|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ _______________ : 57|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Park_rear_right : 45|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Park_rear_left : 44|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Park_rear : 43|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Park_front_right : 42|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Park_front_left : 41|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Park_front : 40|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Fast_beeps : 39|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Long_beep : 38|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ beep_beep_beep_beep : 60|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Sig_3________________________ : 57|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ beep_beep_beep : 22|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Speed : 55|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Outside_temp_from_ID_315 : 47|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Speed_from_ID_215 : 31|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ ODO : 7|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ ______________________ : 3|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ _______________ : 2|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ AS_G_on : 6|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ AS_G_off : 5|3@0+ (1,0) [0|7] "" Vector__XXX
- SG_ Beep_beep_beep_beep : 0|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Park_rear_right : 5|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Park_rear_left : 4|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Park_rear : 3|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Park_front_right : 2|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Park_front_left : 1|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Park_front : 0|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ ______EV__________ : 55|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Battery_LED : 35|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ outside_temp : 55|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ outside_temp_2 : 31|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Trunk : 21|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ RR_door : 20|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ RL_door : 19|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ FR_door : 18|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ FL_door : 17|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Fasten_seat_belt : 16|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ _________________ : 11|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ _________ : 10|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Sig_3____2__1___ : 9|3@0+ (1,0) [0|7] "" Vector__XXX
- SG_ Sig_0E_1_07_8_16_B_17_B1_1B_0000 : 5|3@0+ (1,0) [0|7] "" Vector__XXX
- SG_ Outside_temperature_present : 63|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ EV_run_ratio : 62|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Energy_flow : 61|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ PHEV_distance_to_empty : 60|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Steering_wheel_sw_present : 59|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Tail_gate_type_trunk : 58|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Power_swich_reminder : 57|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Eco_score_present : 55|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Eco_gauge_present : 54|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ ASG_status_present : 53|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Reverse_gear_alarm : 51|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Drive_mode_present : 49|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ GCC_speed_alarm_ind : 48|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Service_reminder_MILE : 47|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Service_reminder_KM : 39|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Service_reminder_months : 27|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Heated_windshield : 21|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Fuel_tank_type : 19|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Option_heater : 15|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Transmission_for_OSS : 14|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Engine_type_for_OSS : 7|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Final_drive_3_4wd_ff_4_4wd_r : 34|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Sig_5_SST_3_CVT_1_5MT_2_6MT_0004 : 23|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Engine_power : 17|3@0+ (1,0) [0|7] "" Vector__XXX
- SG_ Sig_0_4B11_2_4B12_4_6B31 : 10|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Flag : 1|3@0+ (1,0) [0|7] "" Vector__XXX
-
 BO_ 786 x312: 8 ENGINE
  SG_ EngineTqData : 4|13@0+ (0.125,0) [0|0] "" Vector__XXX
  SG_ DynamicEngineTq : 20|13@0+ (0.125,0) [0|0] "" Vector__XXX
@@ -279,10 +160,6 @@ BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 1215752192;
 BA_DEF_ SG_  "SystemSignalLongSymbol" STRING ;
 BA_DEF_DEF_  "GenSigStartValue" 0;
 BA_DEF_DEF_  "SystemSignalLongSymbol" "";
-BA_ "SystemSignalLongSymbol" SG_ 776 MinimumTorqueReachedByIgnit_0001 "MinimumTorqueReachedByIgnitionRetard";
-BA_ "SystemSignalLongSymbol" SG_ 3221225472 Sig_2_LDW_icon_3_green_car__0002 "Sig_2_LDW_icon_3_green_car_on_lane";
-BA_ "SystemSignalLongSymbol" SG_ 3221225472 Sig_1_____2___3__4_uncalibr_0003 "Sig_1_____2___3__4_uncalibrated_5_calibrating";
-BA_ "SystemSignalLongSymbol" SG_ 3221225472 Sig_0E_1_07_8_16_B_17_B1_1B_0000 "Sig_0E_1_07_8_16_B_17_B1_1B_B5_1C_B0";
-BA_ "SystemSignalLongSymbol" SG_ 3221225472 Sig_5_SST_3_CVT_1_5MT_2_6MT_0004 "Sig_5_SST_3_CVT_1_5MT_2_6MT_4_6AT_6_4AT_7_trans_axle";
+BA_ "SystemSignalLongSymbol" SG_ 776 MinimumTorqueReachedByIgnit_0000 "MinimumTorqueReachedByIgnitionRetard";
 VAL_ 520 AscGearHoldRequest 1 "TCL" 3 "ASC" 4 "Requested" 5 "HoldAndLU" ;
 
