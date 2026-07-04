@@ -1,0 +1,426 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: ETACS IMMO METER SRS AC
+
+
+BO_ 0 x000: 6 ETACS
+ SG_ IgnitionState : 7|3@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ KeyInSlot : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2 x002: 8 ETACS
+ SG_ Distance_1 : 55|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Distance_2 : 39|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VehicleSpeed : 23|16@0+ (0.0078125,0) [0|1] "" Vector__XXX
+ SG_ EngineRevs : 7|16@0+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 3 x003: 7 ETACS
+ SG_ TransmissionOverheatingSST : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IntercoolerSprayLamp : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BeepLong : 53|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BeepFastX2 : 52|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AwdOverheating : 49|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TransmissionAddidionalSig : 47|8@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ GearSymbol : 39|8@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ID415_0_byte_0x10 : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ID415_0_byte_0x08 : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ID6FE_3_byte_0x08 : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ID308_3_byte_0x20 : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ID415_5_byte_0x01 : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BrakePedalSw : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ID6FE_3_byte_0x10 : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TransmissionOverheating : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ManualGearChangeMode : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ GearR_1 : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ GearD : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ GearN : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ GearR_2 : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CruiseOn : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CruiseActive : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AcCompressorDriveFlag : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ID308_0_byte_0x02 : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DieselGlowIndicator : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LowOilPressure : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ MilFastBlink : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Mil : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BatteryIcon : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ID308_3_byte_0x80 : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BrakeSystemFault_1 : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BrakeSystemFault_2 : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AscInOperation : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AscOff : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AscSystemFault : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AbsSystemFault : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 4 x004: 6 ETACS
+ SG_ AycBrakeOff : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SawcSideIndication : 46|4@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SawcCenterIndication : 42|3@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ WheelSpeedSnsrFault : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SstMode : 38|3@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ID308_4_byte_0x08 : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Beep : 34|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AsgOff : 33|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Asg : 32|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ID415_4_byte_0x20 : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ID415_4_byte_0x10 : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ID415_4_byte_0x08 : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DpfSystemFault : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DpfSystemCheck : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ OilLevelLow : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngineEcuSystemFault : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ID415_4_byte_0x04 : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ID415_4_byte_0x02 : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EcoIndicator : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LockOpened_2 : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LockClosed_2 : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LockOpenButton : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LockCloseButton : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AycAwcSystemFault : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AwdModesType : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AwdMode : 12|3@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BacklightEnable : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ID308_0_byte_0x80 : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EpsSystemFault : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LockOpened : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LockClosed : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 6 x006: 6 ETACS
+ SG_ Ahb : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RearFogLights : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FrontFogLights : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HiBeam : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LowBeam : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PositionLamps : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TurnOffLightWarning : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RightTurnLamp : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LeftTurnLamp : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 8 x008: 6 SRS
+ SG_ SrsSystemFault : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 19 x013: 6 ETACS
+ SG_ Trunk : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RlDoor : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RrDoor : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PasDoor : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DrDoor : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 20 x014: 7 METER
+ SG_ OutsideTemperature : 39|16@0+ (0.01,-40) [0|1] "C" Vector__XXX
+ SG_ Odometer : 7|24@0+ (0.1,0) [0|1] "km" Vector__XXX
+
+BO_ 21 x015: 8 ETACS
+ SG_ BatteryVoltage : 15|8@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ OutsideTemperatureRaw : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 23 x017: 4 IMMO
+ SG_ ImmoInfoMessage : 11|4@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 44 x02C: 6 ETACS
+ SG_ BarometricPressure : 31|8@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngineCoolantTemperature : 15|8@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ID415_byte1 : 7|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 208 x0D0: 2 METER
+ SG_ DrSeatbelt : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ParkingBrake : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DieselGlowIndicator : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Mil : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 337 x151: 7 METER
+ SG_ Backlight : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VehicleLanguage : 43|4@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ InstantFuelConsumption : 31|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CruisingRange : 15|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AvgResetType : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TemperatureInFarengheit : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AvgConsumptionUnits : 2|3@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 338 x152: 8 METER
+ SG_ AvgFuelConsumption : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 340 x154: 4 METER
+ SG_ FuelLevelFiltered : 15|8@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FuelLevelRaw : 7|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 423 x1A7: 6 ETACS
+ SG_ EssSystemFault_1 : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EssSystemFault_2 : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HlLevelingSystemFault_1 : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HlLevelingSystemFault_2 : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AfsSystemFault_1 : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AfsSystemFault_2 : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AfsOff : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AlternatorUseRate : 23|8@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ InstantFuelConsumption : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 430 x1AE: 6 ETACS
+ SG_ LowBrakeFluidLevel : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Hood : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LowWasherFluidLevel : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 434 x1B2: 6 ETACS
+ SG_ _4wdMode : 10|3@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ _4wdSystemFault : 5|1@0+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 438 x1B6: 7 IMMO
+ SG_ TpmsWarningWBeep : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TpmsSystemFault : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TpmsLowTyrePressure : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 450 x1C2: 8 IMMO
+ SG_ ImmoInfoMessage : 3|4@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 456 x1C8: 6 ETACS
+ SG_ LightSwitchPos : 1|2@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 459 x1CB: 6 ETACS
+ SG_ Beeps_1 : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Beeps_2 : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AlarmActivation_1 : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AlarmActivation_2 : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Beeps_3 : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ContinuousBeep : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EtacsSystemFault : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 528 x210: 2 METER
+ SG_ BacklightLevel : 15|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 704 x2C0: 8 ETACS
+ SG_ ID4A0_Data : 7|64@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ MapSensor : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 785 x311: 4 METER
+ SG_ Odometer : 7|24@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 787 x313: 8 METER
+ SG_ OutsideTemperature : 55|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1016 x3F8: 6 ETACS
+ SG_ ParkingRr : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ParkingRl : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ParkingR : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ParkingFr : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ParkingFl : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ParkingF : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 27 x01B: 8 ETACS
+ SG_ VinMux M : 1|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VinPart_0 m0 : 15|56@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VinPart_1 m1 : 15|56@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VinPart_2 m2 : 15|56@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 236 x0EC: 1 AC
+ SG_ CompressorOnRequest : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AcOn : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 389 x185: 8 AC
+ SG_ RefrigerantPressure : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ FanDutyRequest : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ IdleSpeedRequest : 25|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AtLockupOpenRequest : 33|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ FlowDirection : 47|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ WindowHeater : 44|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ WindshieldMax : 42|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ StateChanged : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Beeps : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ AirSource : 53|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BlowerSpeed : 51|4@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 464 x1D0: 8 ETACS
+ SG_ CustomState : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ CustomFields : 15|48@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 827 x33B: 4 ETACS
+ SG_ SasAngle : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SasAccel : 23|16@0+ (1,0) [0|0] "" Vector__XXX
+
+
+
+CM_ SG_ 0 IgnitionState "";
+CM_ SG_ 0 KeyInSlot "";
+CM_ SG_ 2 Distance_1 "";
+CM_ SG_ 2 Distance_2 "";
+CM_ SG_ 2 VehicleSpeed "";
+CM_ SG_ 2 EngineRevs "";
+CM_ SG_ 3 TransmissionOverheatingSST "";
+CM_ SG_ 3 IntercoolerSprayLamp "";
+CM_ SG_ 3 BeepLong "";
+CM_ SG_ 3 BeepFastX2 "";
+CM_ SG_ 3 AwdOverheating "";
+CM_ SG_ 3 TransmissionAddidionalSig "18 - shift up, 19 - shift dn, 60 - transmission service req";
+CM_ SG_ 3 GearSymbol "1-6, A, D, 46-0, L, N, R, 80-Ds, 81-86 D1-6, 8F - D*";
+CM_ SG_ 3 ID415_0_byte_0x10 "ID415 0 byte 0x10";
+CM_ SG_ 3 ID415_0_byte_0x08 "ID415 0 byte 0x08";
+CM_ SG_ 3 ID6FE_3_byte_0x08 "ID6FE 3 byte 0x08";
+CM_ SG_ 3 ID308_3_byte_0x20 "ID308 3 byte 0x20";
+CM_ SG_ 3 ID415_5_byte_0x01 "ID415 5 byte 0x01";
+CM_ SG_ 3 BrakePedalSw " ";
+CM_ SG_ 3 ID6FE_3_byte_0x10 "ID6FE 3 byte 0x10";
+CM_ SG_ 3 TransmissionOverheating "";
+CM_ SG_ 3 ManualGearChangeMode "";
+CM_ SG_ 3 GearR_1 "";
+CM_ SG_ 3 GearD "";
+CM_ SG_ 3 GearN "";
+CM_ SG_ 3 GearR_2 "";
+CM_ SG_ 3 CruiseOn "";
+CM_ SG_ 3 CruiseActive "Cruise operating";
+CM_ SG_ 3 AcCompressorDriveFlag "";
+CM_ SG_ 3 ID308_0_byte_0x02 "ID308 0 byte 0x02";
+CM_ SG_ 3 DieselGlowIndicator "";
+CM_ SG_ 3 LowOilPressure "";
+CM_ SG_ 3 MilFastBlink "";
+CM_ SG_ 3 Mil "";
+CM_ SG_ 3 BatteryIcon "";
+CM_ SG_ 3 ID308_3_byte_0x80 "";
+CM_ SG_ 3 BrakeSystemFault_1 "";
+CM_ SG_ 3 BrakeSystemFault_2 "";
+CM_ SG_ 3 AscInOperation "";
+CM_ SG_ 3 AscOff "";
+CM_ SG_ 3 AscSystemFault "";
+CM_ SG_ 3 AbsSystemFault "";
+CM_ SG_ 4 AycBrakeOff "";
+CM_ SG_ 4 SawcSideIndication "";
+CM_ SG_ 4 SawcCenterIndication "";
+CM_ SG_ 4 WheelSpeedSnsrFault "";
+CM_ SG_ 4 SstMode "";
+CM_ SG_ 4 ID308_4_byte_0x08 "ID308 4 byte 0x08";
+CM_ SG_ 4 Beep "";
+CM_ SG_ 4 AsgOff "";
+CM_ SG_ 4 Asg "";
+CM_ SG_ 4 ID415_4_byte_0x20 "ID415 4 byte 0x20";
+CM_ SG_ 4 ID415_4_byte_0x10 "ID415 4 byte 0x10";
+CM_ SG_ 4 ID415_4_byte_0x08 "ID415 4 byte 0x08";
+CM_ SG_ 4 DpfSystemFault "";
+CM_ SG_ 4 DpfSystemCheck "";
+CM_ SG_ 4 OilLevelLow "";
+CM_ SG_ 4 EngineEcuSystemFault "";
+CM_ SG_ 4 ID415_4_byte_0x04 "ID415 4 byte 0x04";
+CM_ SG_ 4 ID415_4_byte_0x02 "ID415 4 byte 0x02";
+CM_ SG_ 4 EcoIndicator "";
+CM_ SG_ 4 LockOpened_2 "";
+CM_ SG_ 4 LockClosed_2 "";
+CM_ SG_ 4 LockOpenButton "";
+CM_ SG_ 4 LockCloseButton "";
+CM_ SG_ 4 AycAwcSystemFault "";
+CM_ SG_ 4 AwdModesType "";
+CM_ SG_ 4 AwdMode "";
+CM_ SG_ 4 BacklightEnable "   ";
+CM_ SG_ 4 ID308_0_byte_0x80 "ID308 0 byte 0x80";
+CM_ SG_ 4 EpsSystemFault "";
+CM_ SG_ 4 LockOpened "";
+CM_ SG_ 4 LockClosed "";
+CM_ SG_ 6 Ahb "";
+CM_ SG_ 6 RearFogLights " ";
+CM_ SG_ 6 FrontFogLights " ";
+CM_ SG_ 6 HiBeam "";
+CM_ SG_ 6 LowBeam "";
+CM_ SG_ 6 PositionLamps "";
+CM_ SG_ 6 TurnOffLightWarning "    ";
+CM_ SG_ 6 RightTurnLamp "";
+CM_ SG_ 6 LeftTurnLamp "";
+CM_ SG_ 8 SrsSystemFault "Airbag service req";
+CM_ SG_ 19 Trunk "";
+CM_ SG_ 19 RlDoor "";
+CM_ SG_ 19 RrDoor "";
+CM_ SG_ 19 PasDoor "";
+CM_ SG_ 19 DrDoor "";
+CM_ SG_ 20 OutsideTemperature "";
+CM_ SG_ 20 Odometer "";
+CM_ SG_ 21 BatteryVoltage "";
+CM_ SG_ 21 OutsideTemperatureRaw "";
+CM_ SG_ 23 ImmoInfoMessage "1 - key battery low, 2,4,5 - key not detected, 3,6 - lock, 7 - key still in vehicle, 8 - check doors, 9, D, E - kos service required, A - key not detected, insert in glove box, B - remove key from glove box, C - push button";
+CM_ SG_ 44 BarometricPressure "";
+CM_ SG_ 44 EngineCoolantTemperature "";
+CM_ SG_ 44 ID415_byte1 "ID415 byte1";
+CM_ SG_ 208 DrSeatbelt "   ";
+CM_ SG_ 208 ParkingBrake "";
+CM_ SG_ 208 DieselGlowIndicator "";
+CM_ SG_ 208 Mil "";
+CM_ SG_ 337 Backlight "";
+CM_ SG_ 337 VehicleLanguage "";
+CM_ SG_ 337 InstantFuelConsumption "";
+CM_ SG_ 337 CruisingRange "";
+CM_ SG_ 337 AvgResetType "  ";
+CM_ SG_ 337 TemperatureInFarengheit "";
+CM_ SG_ 337 AvgConsumptionUnits "  0 - km\l, 2 - L\100km, 5 - mpg US, 7 - mpg UK";
+CM_ SG_ 338 AvgFuelConsumption "";
+CM_ SG_ 340 FuelLevelFiltered "";
+CM_ SG_ 340 FuelLevelRaw "";
+CM_ SG_ 423 EssSystemFault_1 "";
+CM_ SG_ 423 EssSystemFault_2 "";
+CM_ SG_ 423 HlLevelingSystemFault_1 "";
+CM_ SG_ 423 HlLevelingSystemFault_2 "";
+CM_ SG_ 423 AfsSystemFault_1 "";
+CM_ SG_ 423 AfsSystemFault_2 "";
+CM_ SG_ 423 AfsOff "";
+CM_ SG_ 423 AlternatorUseRate "";
+CM_ SG_ 423 InstantFuelConsumption "";
+CM_ SG_ 430 LowBrakeFluidLevel "";
+CM_ SG_ 430 Hood "";
+CM_ SG_ 430 LowWasherFluidLevel "";
+CM_ SG_ 434 _4wdMode "";
+CM_ SG_ 434 _4wdSystemFault "";
+CM_ SG_ 438 TpmsWarningWBeep "";
+CM_ SG_ 438 TpmsSystemFault "";
+CM_ SG_ 438 TpmsLowTyrePressure "";
+CM_ SG_ 450 ImmoInfoMessage "";
+CM_ SG_ 456 LightSwitchPos "";
+CM_ SG_ 459 Beeps_1 "";
+CM_ SG_ 459 Beeps_2 "";
+CM_ SG_ 459 AlarmActivation_1 "";
+CM_ SG_ 459 AlarmActivation_2 "";
+CM_ SG_ 459 Beeps_3 "";
+CM_ SG_ 459 ContinuousBeep "";
+CM_ SG_ 459 EtacsSystemFault "";
+CM_ SG_ 528 BacklightLevel "";
+CM_ SG_ 704 ID4A0_Data "All data from ID4A0";
+CM_ SG_ 785 Odometer "";
+CM_ SG_ 787 OutsideTemperature "outside temp (0.1C from -40)";
+CM_ SG_ 1016 ParkingRr "";
+CM_ SG_ 1016 ParkingRl "";
+CM_ SG_ 1016 ParkingR "";
+CM_ SG_ 1016 ParkingFr "";
+CM_ SG_ 1016 ParkingFl "";
+CM_ SG_ 1016 ParkingF "";
+BA_DEF_ SG_  "SystemSignalLongSymbol" STRING ;
+BA_DEF_DEF_  "SystemSignalLongSymbol" "";
+VAL_ 0 IgnitionState 0 "OFF" 3 "ACC" 4 "IGN_ON" 5 "ENG_START" ;
+VAL_ 4 SstMode 1 "S_SPORT" 2 "SPORT" 3 "NORMAL" 7 "FAULT" ;
+VAL_ 4 AwdModesType 1 "TARMAC_SNOW_LOCK" 0 "TARMAC_GRAVEL_SNOW__ACTTEST" ;
+VAL_ 4 AwdMode 1 "TARMAC" 2 "GRAVEL" 3 "SNOW" ;
+VAL_ 23 ImmoInfoMessage 1 "BATTERY_LOW" ;
+

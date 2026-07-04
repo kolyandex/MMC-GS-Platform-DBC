@@ -1,0 +1,288 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: ABS ENGINE ETACS SAS SHIFT TRANSMISSION
+
+
+BO_ 512 x200: 8 ABS
+ SG_ WheelSpeedFr : 33|10@0+ (0.5,0) [0|511.5] "RPM" Vector__XXX
+ SG_ WheelSpeedFl : 17|10@0+ (0.5,0) [0|511.5] "RPM" Vector__XXX
+ SG_ SpeedSensorFault : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AscActive : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AscOff : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AscSystemFault : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AbsSystemFault : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BrakeSystemFault : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AycBrakeOff : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 520 x208: 8 ABS
+ SG_ WheelSpeedRl : 49|10@0+ (0.5,0) [0|511.5] "RPM" Vector__XXX
+ SG_ WheelSpeedRr : 33|10@0+ (0.5,0) [0|511.5] "RPM" Vector__XXX
+ SG_ BrakePedalPress : 16|9@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EspSystemFault : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ NormalOperation : 13|1@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ AscGearHoldRequest : 10|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ AbsActive : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 528 x210: 8 ENGINE
+ SG_ CruiseOn : 45|1@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ APS_1 : 23|8@0+ (0.4,0) [0|102] "%" Vector__XXX
+ SG_ APS_0 : 7|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 530 x212: 8 ENGINE
+ SG_ TransmissionTqReqAck : 54|1@0- (1,0) [0|0] "flag" Vector__XXX
+ SG_ TransmissionTqReqAllowed : 53|1@0- (1,0) [0|0] "flag" Vector__XXX
+ SG_ TargetIdleSpeed : 7|16@0+ (1,0) [0|65535] "RPM" Vector__XXX
+ SG_ DriverRequestedTq : 36|13@0+ (0.125,0) [0|0] "" Vector__XXX
+
+BO_ 533 x215: 7 ABS
+ SG_ MasterVehicleSpeed : 7|16@0+ (0.007812,0) [0|511.95942] "km/h" Vector__XXX
+
+BO_ 536 x218: 8 TRANSMISSION
+ SG_ TqReqFast : 44|1@0- (1,0) [0|0] "flag" Vector__XXX
+ SG_ TqReqSlow : 43|1@0- (1,0) [0|0] "flag" Vector__XXX
+ SG_ TqReqFuel : 42|1@0- (1,0) [0|0] "flag" Vector__XXX
+ SG_ TemperatureWarn : 35|1@0- (1,0) [0|0] "ON/OFF" Vector__XXX
+ SG_ ShiftBuzzer : 32|1@0- (1,0) [0|0] "ON/OFF" Vector__XXX
+ SG_ ClutchSlipping : 31|1@0- (1,0) [0|0] "flag" Vector__XXX
+ SG_ ClutchOpened : 30|1@0- (1,0) [0|0] "flag" Vector__XXX
+ SG_ ClutchClosed : 29|1@0- (1,0) [0|0] "flag" Vector__XXX
+ SG_ GearChangeMode : 24|1@0- (1,0) [0|0] "M/D" Vector__XXX
+ SG_ TargetGear : 23|4@0+ (1,0) [0|15] "gear" Vector__XXX
+ SG_ ActualGear : 19|4@0+ (1,0) [0|15] "gear" Vector__XXX
+ SG_ TqReductionRequest : 6|1@0- (1,0) [0|0] "flag" Vector__XXX
+ SG_ TqIncreaseRequest : 5|1@0- (1,0) [0|0] "flag" Vector__XXX
+ SG_ TqRequest : 4|13@0+ (0.125,0) [0|1023.875] "Nm" Vector__XXX
+
+BO_ 560 x230: 8 SHIFT
+ SG_ ModeDn : 7|1@0- (1,0) [0|0] "ON/OFF" Vector__XXX
+ SG_ ModeUp : 6|1@0- (1,0) [0|0] "ON/OFF" Vector__XXX
+ SG_ LeverPos : 3|4@0+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 566 x236: 8 SAS
+ SG_ SteeringAcceleration : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SteeringAngle : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 584 x248: 8 ETACS
+ SG_ ParkingBrake : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HazardLight : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 613 x265: 8 TRANSMISSION
+ SG_ TransmissionLossTorque : 52|13@0+ (0.125,0) [0|1023.875] "Nm" Vector__XXX
+ SG_ IdleSpdIncreaseReq : 7|1@0+ (1,0) [0|1] "ON/OFF" Vector__XXX
+
+BO_ 776 x308: 8 ENGINE
+ SG_ MinimumTorqueReachedByIgnit_0001 : 44|13@0+ (0.125,0) [0|1023.875] "Nm" Vector__XXX
+ SG_ EngineRevs : 15|16@0+ (1,0) [0|65535] "RPM" Vector__XXX
+
+BO_ 777 x309: 7 ENGINE
+ SG_ EngineTorqueSource : 53|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ AccPedalRateOfChange : 35|12@0+ (1,-2048) [-2048|2047] "" Vector__XXX
+ SG_ EngineSpeedRateOfChange : 23|16@0+ (1,-32768) [-32768|32767] "" Vector__XXX
+ SG_ ExpectedEngineTorque : 4|13@0+ (0.125,0) [0|1023.875] "Nm" Vector__XXX
+
+BO_ 790 x316: 8 TRANSMISSION
+ SG_ ExpectedEngineTqCalcType : 49|1@0- (1,0) [-1|0] "" Vector__XXX
+ SG_ TransmissionSpeedRequestFlag : 48|1@0- (1,0) [-1|0] "flag" Vector__XXX
+ SG_ ExpectedEngineTorqueCalcSpeed : 37|14@0+ (0.5,0) [0|8191.5] "RPM" Vector__XXX
+ SG_ TransmissionSpeedRequest : 21|14@0+ (1,0) [0|16383] "RPM" Vector__XXX
+ SG_ EngineTorqueLimit : 4|13@0+ (0.125,0) [0|1023.875] "Nm" Vector__XXX
+
+BO_ 824 x338: 8 TRANSMISSION
+ SG_ UnkSignal : 31|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ OutputShaftSpeed : 7|16@0+ (0.125,0) [0|8191.875] "RPM" Vector__XXX
+
+BO_ 869 x365: 8 TRANSMISSION
+ SG_ EngineSpeedLimit : 63|8@0+ (30,0) [0|7650] "RPM" Vector__XXX
+ SG_ TransmissionRatio : 39|8@0+ (1,0) [0|255] "x" Vector__XXX
+
+BO_ 1048 x418: 8 TRANSMISSION
+ SG_ LeverPosition : 53|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ Mode : 31|3@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Temperature : 23|8@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Status : 15|3@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AdditionalInfoMessage : 12|5@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ GearSymbol : 7|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1184 x4A0: 8 ENGINE
+ SG_ BrakePressed : 59|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BrakePressed_1 : 58|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ MapSensor : 39|8@0+ (1,0) [0|255] "kpa" Vector__XXX
+
+BO_ 1544 x608: 8 ENGINE
+ SG_ FuelInstConsumption : 47|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AlternatorUseRate : 31|8@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IntakeTemp : 15|8@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CoolantTemp : 7|8@0+ (1,-40) [-40|215] "C" Vector__XXX
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ _________100_ : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ MPH : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ___0x40__ : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ _______________0x40_____________ : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Periodic_maintenance_schedule : 62|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Reverse_gear_alarm : 51|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Seat_belt_reminder_AABT : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Trip_autoreset : 43|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Charging_time : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Shift_disp_layout_RHD : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Sig_7_dist_to_empty_AVG_cons : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Frost_warn_threshold : 36|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Coolant_gauge_0_norm_1_HOT : 33|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Fuel_cons_scale : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ B_Russian : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Average_speed : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Left_side_view_camera : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Nose_view_camera : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Rear_camera : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Farenheit : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Compressor_type_1_6 : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Language_mode_ENABLE : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ S_AWC_Display : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Display_opening_type : 5|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ Flag : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Beeeeep : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Beeeeep_2 : 37|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Lane_departure : 36|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Sig_2_LDW_icon_3_green_car__0002 : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Sig_44 : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Sig_43 : 43|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Beep_beep : 34|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Beeeeeeep : 33|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Beep : 32|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Sig_27 : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ________ACC____________________ : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ________ACC__________________ : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ _________________ : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ _________ : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ MPH : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Speed_since_20_FF_off : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Cruise_small_icon_left : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Sig_4 : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Sig_3 : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ _______________ : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ______________ : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Sig_1_____2___3__4_uncalibr_0003 : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Beep_beep_beep_beep : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Beeep_beeep_beeep_beeep : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ____ : 62|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ _______________ : 57|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Park_rear_right : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Park_rear_left : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Park_rear : 43|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Park_front_right : 42|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Park_front_left : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Park_front : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Fast_beeps : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Long_beep : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ beep_beep_beep_beep : 60|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Sig_3________________________ : 57|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ beep_beep_beep : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Speed : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Outside_temp_from_ID_315 : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Speed_from_ID_215 : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ODO : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ______________________ : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ _______________ : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AS_G_on : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AS_G_off : 5|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ Beep_beep_beep_beep : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Park_rear_right : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Park_rear_left : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Park_rear : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Park_front_right : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Park_front_left : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Park_front : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ______EV__________ : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Battery_LED : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ outside_temp : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ outside_temp_2 : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Trunk : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RR_door : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RL_door : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FR_door : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FL_door : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Fasten_seat_belt : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ _________________ : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ _________ : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Sig_3____2__1___ : 9|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ Sig_0E_1_07_8_16_B_17_B1_1B_0000 : 5|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ Outside_temperature_present : 63|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EV_run_ratio : 62|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Energy_flow : 61|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PHEV_distance_to_empty : 60|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Steering_wheel_sw_present : 59|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Tail_gate_type_trunk : 58|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Power_swich_reminder : 57|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Eco_score_present : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Eco_gauge_present : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ASG_status_present : 53|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Reverse_gear_alarm : 51|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Drive_mode_present : 49|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ GCC_speed_alarm_ind : 48|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Service_reminder_MILE : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Service_reminder_KM : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Service_reminder_months : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Heated_windshield : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Fuel_tank_type : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Option_heater : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Transmission_for_OSS : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Engine_type_for_OSS : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Final_drive_3_4wd_ff_4_4wd_r : 34|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Sig_5_SST_3_CVT_1_5MT_2_6MT_0004 : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Engine_power : 17|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ Sig_0_4B11_2_4B12_4_6B31 : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Flag : 1|3@0+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 786 x312: 8 ENGINE
+ SG_ EngineTqData : 4|13@0+ (0.125,0) [0|0] "" Vector__XXX
+ SG_ DynamicEngineTq : 20|13@0+ (0.125,0) [0|0] "" Vector__XXX
+ SG_ MaxPossibleEngineTq : 36|13@0+ (0.125,0) [0|0] "" Vector__XXX
+
+
+
+CM_ SG_ 560 LeverPos "8 - parking, 7 - rear, 6 - N, 5 - D, E - manual, A - Manual UP, 9 - manual DN";
+CM_ SG_ 777 EngineTorqueSource "1-idle,2-dr req,3-cruise,B-engine protection";
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 1215752192;
+BA_DEF_ SG_  "SystemSignalLongSymbol" STRING ;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "SystemSignalLongSymbol" "";
+BA_ "SystemSignalLongSymbol" SG_ 776 MinimumTorqueReachedByIgnit_0001 "MinimumTorqueReachedByIgnitionRetard";
+BA_ "SystemSignalLongSymbol" SG_ 3221225472 Sig_2_LDW_icon_3_green_car__0002 "Sig_2_LDW_icon_3_green_car_on_lane";
+BA_ "SystemSignalLongSymbol" SG_ 3221225472 Sig_1_____2___3__4_uncalibr_0003 "Sig_1_____2___3__4_uncalibrated_5_calibrating";
+BA_ "SystemSignalLongSymbol" SG_ 3221225472 Sig_0E_1_07_8_16_B_17_B1_1B_0000 "Sig_0E_1_07_8_16_B_17_B1_1B_B5_1C_B0";
+BA_ "SystemSignalLongSymbol" SG_ 3221225472 Sig_5_SST_3_CVT_1_5MT_2_6MT_0004 "Sig_5_SST_3_CVT_1_5MT_2_6MT_4_6AT_6_4AT_7_trans_axle";
+VAL_ 520 AscGearHoldRequest 1 "TCL" 3 "ASC" 4 "Requested" 5 "HoldAndLU" ;
+
